@@ -1,0 +1,15 @@
+
+.begin-link {
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+.instructions {
+    margin: 0px 70px;
+}
+
+.text-blue {
+    color: blue;
+}
