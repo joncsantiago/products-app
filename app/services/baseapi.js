@@ -1,7 +1,7 @@
 import Service from '@ember/service';
 import axios from 'axios';
 
-export default class BaseapiService extends Service {
+export default Service.extend({
     
   get(url, withBear = false){
 
@@ -12,7 +12,7 @@ export default class BaseapiService extends Service {
        return axios.get(url);
       }
     }
- }
+ },
   
   delete(url, withBear = false){
 
@@ -23,7 +23,7 @@ export default class BaseapiService extends Service {
        return axios.delete(url);
       }
     }
- }
+ },
   
   patch(url, data, withBear = false){
 
@@ -34,7 +34,7 @@ export default class BaseapiService extends Service {
        return axios.patch(url, data);
       }
     }
- }
+ },
 
   post(url, formdata, withBear = false){
      if(url != ''){
@@ -43,4 +43,4 @@ export default class BaseapiService extends Service {
        }
      }
   }
-}
+})
